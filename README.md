@@ -1,6 +1,6 @@
 # Resizable-Tables
 
-The overall dimensions of the Table data structure can be modied with functions similar in syntax to the
+The overall dimensions of the Table data structure can be modified with functions similar in syntax to the
 STL vector push back and pop back functions. The rows and cols variables are updated as needed, all
 affected arrays are reallocated to be exactly as big as needed, the data is copied into the new arrays, and
 all old replaced arrays are deleted. The push back row and push back column functions take in a single
@@ -10,7 +10,7 @@ new data structure diagram below left. Note that the top level array of pointers
 deleted, but the existing row data arrays can be reused.
 
 If the user next calls pop back column() on this example each row is shortened by one entry by allocating
-new smaller arrays, copying data, and cleaning up the unused memory. This is shown in the gure above
+new smaller arrays, copying data, and cleaning up the unused memory. This is shown in the figure above
 right. The push back column and pop back row member functions work similarly. It is an error to attempt
 to push back a row or column using a vector of data that is the wrong size (too long or too short). It is
 also an error to attempt to pop back a row if rows==0 or to pop back a column if cols==0. Your program
